@@ -151,7 +151,7 @@ function wp_bootstrap_gallery( $content, $attr ) {
 		$attachment_image = wp_get_attachment_image( $id, 'full');
 		$attachment_link = wp_get_attachment_link( $id, 'full', ! ( isset( $attr['link'] ) AND 'file' == $attr['link'] ) );
 		
-		$output .= "<div class='span" . $span_array[$attachment_count] . "'>";
+		$output .= "<div class='col-md-" . $span_array[$attachment_count] . "'>";
 		$output .= $attachment_link . "\n";
 		$output .= "</div>\n";
 
